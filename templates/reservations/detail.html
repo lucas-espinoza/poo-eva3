@@ -1,0 +1,2 @@
+{% extends 'base.html' %}
+{% block content %}<section class="hero"><h1>{{ reservation.package.name }}</h1><p class="subtitle">Detalle de tu reserva</p></section><section class="panel"><p><strong>Personas:</strong> {{ reservation.people_count }}</p><p><strong>Total acordado:</strong> ${{ reservation.total_charged }}</p><p><strong>Estado:</strong> <span class="badge {{ reservation.payment_state }}">{{ reservation.get_payment_state_display }}</span></p><a class="button secondary" href="{% url 'reservations:history' %}">Volver a mis reservas</a></section>{% endblock %}

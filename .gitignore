@@ -1,0 +1,47 @@
+# Python: bytecode y cachés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Django: datos y archivos generados localmente
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Variables de entorno y secretos locales
+.env
+.env.*
+!.env.example
+
+# Pruebas, cobertura y herramientas de calidad
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Registros y archivos temporales
+*.log
+*.tmp
+*.bak
+
+# IDE y sistema operativo
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Artefactos de trabajo y evaluación que no forman parte de la aplicación
+.agents/

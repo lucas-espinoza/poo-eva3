@@ -1,0 +1,2 @@
+{% extends 'base.html' %}
+{% block content %}<section class="hero"><span class="badge">Oferta disponible</span><h1>{{ package.name }}</h1><p class="subtitle">Salida {{ package.departure_date }} · Regreso {{ package.return_date }}</p></section><section class="panel"><p class="price">${{ package.published_price_per_person }} <small>por persona</small></p><p>Reserva tu cupo y un miembro del equipo confirmará el estado de tu pago.</p><a class="button accent" href="{% url 'reservations:create' package.pk %}">Reservar ahora</a></section>{% endblock %}
